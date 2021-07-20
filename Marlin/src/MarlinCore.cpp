@@ -860,7 +860,7 @@ inline void manage_inactivity(const bool ignore_stepper_queue=false) {
     else {
       WRITE(SAFE_POWER_PIN, HIGH);
       SERIAL_ECHO_MSG("safe power ok");
-      delay(100);   // Allow some time for the supply to stabilize now that it has been applied to the drivers.
+      delay(200);   // Allow some time for the supply to stabilize now that it has been applied to the drivers.
     }
   }
 #endif

@@ -1395,7 +1395,7 @@ void set_axis_is_at_home(const AxisEnum axis) {
       //if (axis != Z_AXIS) {
         babystep.reset_total(axis);
       //}
-    #endif    
+    #endif 
     #if ENABLED (BABYSTEP_DISPLAY_TOTAL)
       if (axis == Z_AXIS) {
         current_position[axis] -= planner.steps_to_mm[axis] * babystep.axis_total[BS_TOTAL_IND(axis)];

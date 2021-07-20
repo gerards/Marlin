@@ -2280,7 +2280,7 @@
     #define Z3_CURRENT      800
     #define Z3_CURRENT_HOME Z3_CURRENT
     #define Z3_MICROSTEPS    16
-    #define Z3_RSENSE         0.11
+    #define Z3_RSENSE         0.15
     #define Z3_CHAIN_POS     -1
   #endif
 
@@ -2288,7 +2288,7 @@
     #define Z4_CURRENT      800
     #define Z4_CURRENT_HOME Z4_CURRENT
     #define Z4_MICROSTEPS    16
-    #define Z4_RSENSE         0.11
+    #define Z4_RSENSE         0.15
     #define Z4_CHAIN_POS     -1
   #endif
 
