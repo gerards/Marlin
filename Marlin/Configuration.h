@@ -490,9 +490,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // BIQU-BX1
-  #define DEFAULT_Kp 10.12
-  #define DEFAULT_Ki 0.55
-  #define DEFAULT_Kd 46.14
+  //#define DEFAULT_Kp 10.12
+  //#define DEFAULT_Ki 0.55
+  //#define DEFAULT_Kd 46.14
+
+  // Wob's BIQU-BX1
+  #define DEFAULT_Kp 14.63
+  #define DEFAULT_Ki 1.07
+  #define DEFAULT_Kd 50.04
 
 #endif // PIDTEMP
 
@@ -730,7 +735,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80*2, 80*2, 400*2, 910 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80*2, 80*2, 400*2, 932 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1340,7 +1345,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
